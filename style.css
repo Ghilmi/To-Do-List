@@ -1,0 +1,313 @@
+:root{
+    --colore:rgb(255, 255, 255);
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+#headerPage{
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/al-quran-g699fd6174_1920.jpg);
+    background-position: center;
+    background-size:cover ;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+
+.TitelPage{
+    font-size: 5em;
+    font-weight: 300;
+    line-height: 90px;
+    text-shadow: 0 0 20px #e0e0e0;
+}
+.messageToUser{
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.buttonGo{
+    width: 90%;
+    height: 3em;
+    width: 90%;
+    height: 3em;
+    background: #4caf50;
+    outline: none;
+    border: none;
+    color: var(--colore);
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 2px;
+}
+.buttonGo:hover{
+    
+    background: #67e86b;
+}
+
+.buttonGo::before{
+    content: "";
+    background-color: #ffffff00;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    border-bottom: 3px #c8e6c9 solid;
+    border-right:3px #c8e6c9 solid;
+    transform: rotate(45deg);
+    top: 21px;
+    display: inline-block;
+    left: 33px;
+}
+.buttonGo::after{
+    content: "";
+    background-color: #ffffff00;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    border-bottom: 3px #eee solid;
+    border-right: 3px #eee solid;
+    transform: rotate(45deg);
+    top: 28px;
+    display: inline-block;
+    left: -18px;
+
+
+}
+
+.nav{
+    height: 10vh;
+    position: sticky;
+    z-index: 3;
+    background-color: #67e86b;
+    box-shadow: -2px 3px 20Px 0px #757575;
+
+}
+
+
+ul.headerTow{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+ul.headerTow li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+
+.main{
+    height: 100vh;
+    padding-top: 50px;
+    background-color: var(--colore);
+}
+.control{
+    height: 92%;
+    box-shadow: -1px -1px 3px black;
+    margin: 40px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    background-color:#fafafa ;
+}
+
+#inputText{
+    height: 2.5em;
+    border: none;
+    border-bottom: solid 1px #e0e0e0;
+    width: 36em;
+    text-align: center;
+    margin: 15px;
+}
+
+#buttonAdd{
+    background: #9ccc65;
+    width: 7em;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    user-select: none;
+    transition: ease 0.7s;
+}
+#buttonAdd:hover{
+    background-color: #67e86b;
+}
+
+#containarTasks{
+    border-top: solid 1px;
+    margin-top: 30px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+#clearAllButton{
+    background: #e0e0e0;
+    width: 7em;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+    margin-top: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: ease 0.7s;
+
+}
+#clearAllButton:hover{
+    background-color: #e0e0e9;
+}
+
+#containarTasks div{
+    background: #81c784;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 2px;
+    box-shadow: -1px 1px 2Px 0px #9e9e9e;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    overflow: hidden;
+    max-height: 2em;
+    overflow: visible;
+    position: relative;
+}
+.titleTask{
+    font-size: 2.2em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color:#b39ddb ;
+    user-select: none;
+    cursor: auto;
+}
+
+.buttonBLackNight{
+    width: 65px;
+    height: 27px;
+    border-radius: 20px;
+    border: solid;
+    position: relative;
+    z-index: 2;
+}
+.buttonBLackNight div{
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 21Px;
+    background: red;
+    border-radius: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 0 9Px red, 0 0 9Px #f57f17;
+    z-index: 1;
+}
+#containarTasks div div{
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 21Px;
+    background: #ff000000;
+    border-radius: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    
+}
+
+#containarTasks div div::after{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 21Px;
+    background: red;
+    border-radius: 20px;
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    transform: rotate(315deg);
+    
+}
+#containarTasks div div::before{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 21Px;
+    background: red;
+    border-radius: 20px;
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    transform: rotate(45deg);
+    
+}    
+@media (max-width:400px){
+    body{
+        size: 10px;
+    }
+    .messageToUser{
+        font-size: 1.5em;
+    }
+    #inputText{
+        width: 18em;
+    }
+}
+@media (max-width:600px){
+    body{
+        size: 14px;
+    }
+    .messageToUser{
+        font-size: 2em;
+    }
+    #inputText{
+        width: 33em;
+    }
+}
+@media (max-width:500px){
+    body{
+        size: 14px;
+    }
+    .messageToUser{
+        font-size: 2em;
+    }
+    #inputText{
+        width: 21em;
+    }
+}
+@media (max-width:400px){
+    body{
+        size: 14px;
+    }
+    .messageToUser{
+        font-size: 2em;
+    }
+    #inputText{
+        width: 15em;
+    }
+}
+@media (max-width:300px){
+    body{
+        size: 14px;
+    }
+    .messageToUser{
+        font-size: 2em;
+    }
+    #inputText{
+        width: 10em;
+    }
+}
